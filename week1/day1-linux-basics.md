@@ -37,7 +37,16 @@ Learn how to navigate a Linux system and understand key directories.
 6. Returned to home:
    cd ~
 
----
+--## Screenshots
+
+### pwd output
+![pwd output](./screenshots/pwd.png)
+
+### ls -la output
+![ls -la output](./screenshots/ls-la.png)
+
+### /var/log directory
+![var log output](./screenshots/var-log.png)-
 ---
 
 ## Key Learning
