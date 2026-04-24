@@ -1,16 +1,10 @@
-# Day 1 – Linux Basics
-
-## Objective
-Learn how to navigate a Linux system.
-
-## Commands Used
-- pwd
-- ls
-- ls -la
-- cd
-- cd ..
-- cd /
-- cd ~
-
 ## Screenshots
-(Add screenshots here)
+
+### pwd output
+![pwd output](./screenshots/pwd.png)
+
+### ls -la output
+![ls -la output](./screenshots/ls-la.png)
+
+### /var/log output
+![var log output](./screenshots/var-log.png)
