@@ -1,40 +1,38 @@
-# Day 4 – Log Searching
-
-## Commands
-- grep
-- grep -i
-- grep -c
-
-## Lab
-Searched logs for errors and failed login attempts using grep.
-
-## Screenshots
-![grep](./screenshots/day4-grep.png)
-
----
+# Day 4 – Log Searching Investigation
 
 ## 🚨 Alert Summary
-(What triggered the investigation?)
+
+Multiple failed SSH login attempts detected in /var/log/auth.log for user 'fakeuser'.
 
 ## 🔍 Investigation Notes
-- Commands used:
-- Observations:
-- Patterns found:
+
+* Command used: `grep "Failed password" auth.log`
+* Observed three failed login attempts
+* Attempts originated from 127.0.0.1 (localhost)
+* Attempts occurred within a short timeframe
+* No successful authentication observed
 
 ## 🕒 Timeline
-- Step 1:
-- Step 2:
-- Step 3:
+
+* Step 1: SSH login attempts initiated
+* Step 2: Three failed password attempts recorded
+* Step 3: No successful login observed
 
 ## ✅ Decision
-True Positive / False Positive
+
+True Positive
 
 Reason:
+Repeated failed login attempts from the same source indicate potential brute-force behaviour.
 
 ## 📈 Escalation Note
-- Escalate? (Yes/No)
-- Who to:
-- Why:
+
+Yes – escalate to Level 2 SOC
+
+Reason:
+Activity matches brute-force attack patterns and requires further investigation and monitoring.
 
 ## 📘 Playbook Reference
-(e.g. Brute-force detection, suspicious login activity)
+
+Brute-force login detection playbook
+
