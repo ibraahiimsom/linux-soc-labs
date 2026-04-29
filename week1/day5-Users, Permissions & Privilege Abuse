@@ -1,0 +1,22 @@
+🚨 Alert Summary
+User account creation detected in system logs
+
+🔍 Investigation Notes
+Observed useradd activity in auth.log via Splunk.
+Identified new user "attacker" created manually.
+
+🕒 Timeline
+- User account created
+- Logged in system logs
+- Detected via SIEM
+
+ ✅ Decision
+True Positive
+
+Reason: Unauthorized or unexpected account creation
+
+📈 Escalation Note
+Yes – possible persistence or privilege escalation
+
+📘 Playbook
+User account creation / persistence detection
