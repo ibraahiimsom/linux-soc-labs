@@ -1,0 +1,19 @@
+🚨 Alert Summary
+Suspicious process execution (malware.sh) and user activity detected
+
+Investigation Notes
+Observed custom script running continuously; user account created and removed
+
+🕒 Timeline
+- User created
+- Script executed
+- User deleted
+
+✅ Decision
+True Positive
+
+📈 Escalation Note
+Yes – potential malware execution and persistence attempt
+
+📘 Playbook
+Suspicious process / privilege abuse
