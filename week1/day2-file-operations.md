@@ -1,9 +1,9 @@
-# Day 2 – File Operations
+Day 2 – File Operations
 
-## Objective
+Objective
 Learn file manipulation and attacker behavior.
 
-## Commands
+Commands
 - mkdir
 - touch
 - cp
@@ -12,20 +12,20 @@ Learn file manipulation and attacker behavior.
 - echo
 - cat
 
-## Lab
+Lab
 (Explain what you did)
 
-## Screenshots
+Screenshots
 
-### File creation
+File creation
 ![create](./screenshots/day2-create.png)
 
-### Hidden file
+Hidden file
 ![hidden](./screenshots/day2-hidden.png)
 
-### Delete action
+Delete action
 ![delete](./screenshots/day2-delete.png)
 
-## SOC Insight
+SOC Insight
 
 The rm command is dangerous because it permanently deletes files. Attackers use it to remove evidence like logs.
